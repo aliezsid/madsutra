@@ -48,6 +48,7 @@ nav .site-logo {
 }
 
 nav .site-logo img {
+	height: 55px;
 	object-position: center;
 	object-fit: contain;
 }
@@ -428,6 +429,3 @@ footer p {
 	width: 90%;
 	margin: 10px;
 }
-
-
-@
