@@ -6,5 +6,6 @@ document.addEventListener("scroll", function(e) {
 		siteLogo.src = "./img/emblem.svg";
 	} else {
 		siteLogo.src = "./img/logo-text-min.png";
+		siteLogo.style.height = "";
 	}
 });
