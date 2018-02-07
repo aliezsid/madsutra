@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>MadSutra</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="./css/styles.css">
 		<link rel="stylesheet" href="./css/fontawesome-all.min.css">
 		<link rel="icon" type="image/png" href="./img/favicon.png" />
@@ -11,7 +12,7 @@
 	<body>
 		<header>
 			
-			<nav>
+			<nav class="hidden-small-screen">
 				<div class="site-logo">
 					<img id="site-logo" src="./img/logo-text-min.png" alt="">
 				</div>
@@ -26,6 +27,26 @@
 				</div>
 				<div class="action-container">
 					<a class="button" href="tel:+918125700619">Get in Touch</a>
+				</div>
+			</nav>
+
+			<nav class="show-small-screen">
+				<div class="site-logo">
+					<img id="site-logo" src="./img/emblem.svg" alt="">
+				</div>
+
+				<div class="hamburger-menu" id="nav" onclick="closeNav()">
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+					<ul class="hamburger-overlay">
+						<li><a href="#home">Home</a></li>
+						<li><a href="#services">Services</a></li>
+						<li><a href="#about">About</a></li>
+						<!-- <li><a href="#contact">Contact</a></li>
+						<li><a href="#blog">Blog</a></li> -->
+					</ul>
+				</div>
+				<div class="hamburger-button" onclick="openNav()">
+					<i class="fas fa-bars"></i>
 				</div>
 			</nav>
 			
@@ -43,7 +64,7 @@
 					<div class="title">Why choose us?</div>
 					<div class="subtitle">Here are a few reasons</div>
 				</div>
-				<div class="usp-container">
+				<div class="usp-container flex-wrap">
 					<div class="usp-block">
 						<div class="card">
 							<div class="card-icon">
@@ -208,7 +229,7 @@
 						People You'll Trust
 						</h4>
 						<p class="panel-description">
-							<div class="flex">
+							<div class="flex flex-wrap">
 								<div class="profile-card">
 									<div class="profile-image">
 										<img src="./img/sumit.jpg" alt="">
@@ -251,5 +272,6 @@
 		<footer>
 			<p>Copyright&copy;2018 MadSutra. Designed by <a target="_blank" href="http://aliezsid.github.io">AliezSid</a></p>
 		</footer>
+		<script src="./js/main.js"></script>
 	</body>
 </html>
