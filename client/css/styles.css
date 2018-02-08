@@ -197,6 +197,7 @@ nav .menu li {
 	border-radius: 4px;
 	width: 65%;
 	margin: 100px auto;
+	margin-top: 20px;
 	display: flex;
 }
 
