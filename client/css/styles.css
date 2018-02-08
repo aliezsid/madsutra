@@ -1,17 +1,17 @@
 :root {
 	--white: #f9f9f9;
-	--black: #0f0f0f;
-	--primary-text: #0f0f0f;
+	--black: #575757;
+	--primary-text: #575757;
 	--secondary-text: #f9f9f9;
 	--border-color: #ddd;
-	--accent: #2cc;
+	--accent: #009fff;
 	--dark-accent: #288;
 }
 
 * {
 	margin: 0;
 	padding: 0;
-	font-family: "Open Sans";
+	font-family: "Lato";
 	color: var(--primary-text);
 }
 
@@ -146,7 +146,7 @@ nav .menu li {
 	box-sizing: border-box;
 	padding: 100px 16px;
 	margin-top: 100px;
-	background: var(--black);
+	background: var(--accent);
 	color: white !important;
 }
 
@@ -310,16 +310,18 @@ nav .menu li {
 
 .card-container .card .card-icon i {
 	font-size: 20px;
-	color: var(--accent) !important;
+	color: white !important;
 }
 
 .card-container .card .card-text .title {
-	font-size: 16px;
-	color: var(--accent) !important;
+	font-size: 18px;
+	font-weight: 600;
+	color: white !important;
 }
 
 .card-container .card .card-text .description {
-	font-size: 14px;
+	font-size: 16px;
+	font-weight: 400;
 }
 
 .panel {
